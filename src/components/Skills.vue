@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-6" v-for="(skill, index) in skills" :key="index">
+    <div class="container" id="Skills">
+        <div class="row g-2">
+            <div class="col-md-6 col-6 col-sm-12 g-1 progress-col" v-for="(skill, index) in skills" :key="index">
                 <h3>{{ skill.name }}</h3>
                 <div class="progress" role="progressbar" aria-label="Info striped example"
                     :aria-valuenow="skill.progress" aria-valuemin="0" aria-valuemax="100">
@@ -19,3 +19,8 @@ export default {
     props: ['skills'],
 }
 </script>
+<style scoped>
+.progress-col {
+    margin-bottom: 20px;
+}
+</style>

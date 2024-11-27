@@ -1,32 +1,32 @@
 <template>
-  <Modal :title="title" :modalText="modalText" :showModal="showModal" @close-modal="ToggleModal" />
   <Header PageTitle="Portifolio" />
+  <Modal :title="title" :modalText="modalText" :showModal="showModal" @close-modal="ToggleModal" />
   <router-view></router-view>
 </template>
 
 <script>
-import Modal from './components/Modal.vue'
+import Modal from "./components/Modal.vue";
 import Header from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-    Modal
+    Modal,
   },
   data() {
     return {
-      title: 'Modal Title',
-      modalText: 'This is some text',
-      showModal: false
-    }
+      title: "WAARSCHUWING",
+      modalText: "DIT IS PUUR OM VUE JS TE LEREN, (de schoolopdracht boeit mij niet echt)",
+      showModal: true,
+    };
   },
   methods: {
     ToggleModal() {
-      this.showModal = !this.showModal
-    }
-  }
-}
+      this.showModal = !this.showModal;
+    },
+  },
+};
 </script>
 
 <style>

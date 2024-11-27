@@ -45,7 +45,7 @@ export default {
 </script>
 <style scoped>
 .container {
-    height: 80vh;
+    height: 70vh;
     margin-top: 10vh;
 }
 
@@ -55,6 +55,9 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
     .about-text {
         display: none;
     }
