@@ -1,6 +1,6 @@
 <template>
   <Header PageTitle="Portifolio" />
-  <Modal :title="title" :modalText="modalText" :showModal="showModal" @close-modal="ToggleModal" />
+  <Modal :title="title" :modalText="modalText" :showModal="showModal" @close-modal="ToggleModal"  />
   <router-view></router-view>
 </template>
 
@@ -25,6 +25,12 @@ export default {
     ToggleModal() {
       this.showModal = !this.showModal;
     },
+    makeModal(title, modalText) {
+      console.log("makeModal werkt");
+      this.ToggleModal();
+      this.title = title;
+      this.modalText = modalText;
+    }
   },
 };
 </script>

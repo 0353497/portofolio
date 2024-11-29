@@ -8,6 +8,7 @@ const router = createRouter({
         { path: '/', name: 'Home', component: Home },
         { path: '/home', redirect: '/' },
         { path: '/about', name: 'About', component: About },
+        //{ path: '/:pathMatch(.*)*', name: 'NotFound', component: () => import('../views/NotFound.vue') }
     ]
 });
 
