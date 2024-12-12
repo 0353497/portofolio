@@ -85,6 +85,12 @@ export default {
           "01-01-2021"
         ),
         new Certificaat("PHP", "Dit is een beschrijving van certificaat 8", "01-01-2021"),
+        new Certificaat("SQL", "Dit is een beschrijving van certificaat 9", "01-01-2021"),
+        new Certificaat(
+          "Node js",
+          "Dit is een beschrijving van certificaat 10",
+          "01-01-2021"
+        ),  
       ],
       showModal: false,
       Modaltitle: "",

@@ -43,7 +43,8 @@ export default {
         return {
             ListItems: [
                 new ListItem('Home', '/home'),
-                new ListItem('Contact', '/contact'),
+                //new ListItem('Contact', '/contact'),
+                new ListItem('Login', '/login'),
             ],
         };
     }
